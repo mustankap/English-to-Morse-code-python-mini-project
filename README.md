@@ -1,1 +1,1 @@
-# Enlish-to-Morse-code-python-mini-project
+# English-to-Morse-code-python-mini-project
