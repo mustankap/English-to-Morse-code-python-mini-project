@@ -12,7 +12,7 @@ root.iconbitmap('moiconic_xoU_icon.ico')
 conn=sqlite3.connect('conversiondata.db')
 #create cursor on database
 c=conn.cursor()
-
+'''
 c.execute("""CREATE TABLES codes(
 
 letter text,
@@ -31,7 +31,7 @@ code,text
 #commit the database
 conn.commit()
 
-
+'''
 
 #added photo
 my_image=ImageTk.PhotoImage(Image.open("mo2.jpg"))#can put many such variables in a list for image viewer
@@ -77,7 +77,7 @@ submit_button.grid(row=4,column=0)
 
 #convert button
 submit_button=Button(root,text="CONVERT !",command=convert,bg="#58BFF0",padx="10",pady="10")
-submit_button.grid(row=4,column=0)
+submit_button.grid(row=5,column=0,columnspan=2)
 
 #removeconnection
 conn.close()
